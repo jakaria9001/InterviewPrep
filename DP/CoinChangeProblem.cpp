@@ -1,6 +1,6 @@
-**Day 0: Coin Change Problem And Varieties:**
+// Day 0: Coin Change Problem And Varieties:**
 
-Problem Link <a href="https://leetcode.com/problems/coin-change">here.</a>
+// Problem Link <a href="https://leetcode.com/problems/coin-change">here.</a>
 1. Recursive Solution for no of coins required to get target sum:
     
     int coins[n];
