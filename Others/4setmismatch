@@ -1,0 +1,32 @@
+// Set mismatch : nlogn solution.
+// Link: https://leetcode.com/problems/set-mismatch/
+
+class Solution {
+public:
+    vector<int> findErrorNums(vector<int>& nums) {
+        
+        int n = nums.size();
+        int actualsum = n*(n+1)/2, sum = 0;
+        for(int x : nums){
+            sum+=x;
+        }
+        
+        int twice;
+        sort(nums.begin(),nums.end());
+        for(int i=1;i<n;i++){
+            if(nums[i]==nums[i-1]){
+                twice = nums[i];
+                break;
+            }
+        }
+        // twice : 
+        
+        
+        
+        
+        //missing:
+        int missing = actualsum - (sum-twice);
+        
+        return {twice, missing};
+    }
+};
