@@ -1,0 +1,37 @@
+// LInk : https://leetcode.com/problems/sum-of-all-odd-length-subarrays
+
+class Solution {
+public:
+    int sumOddLengthSubarrays(vector<int>& arr) {
+        int sum = 0;
+        int n = arr.size();
+
+        // for(int x=0;x<n;x++) sum+=arr[x];
+
+        /*
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j+=2){
+                for(int k=i;k<=j;k++){
+                    
+                    sum += arr[k];
+                }
+            }
+        }
+        */
+        
+        for(int i=0;i<n;i++){
+            sum += ((i+1)*(n-i)+1)/2*arr[i];
+        }
+        return sum;
+    }
+};
+
+/*
+Efficient Approach: To optimize the above approach, the idea is to observe the following pattern after generating all the subarrays of odd length:
+
+For any element at index idx there are (idx + 1) choices on the left side of it and (N – idx) choices on the right side of it.
+Therefore, for any element arr[i], the count of arr[i] is (i + 1) * (N – i) in all the subarrays.
+So, for an element arr[i], there are ((i + 1) * (N – i) + 1) / 2 sub-arrays with odd length.
+Finally, arr[i] will have a total of ((i + 1) * (n – i) + 1) / 2 frequency in the sum.
+
+*/
