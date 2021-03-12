@@ -1,0 +1,106 @@
+Enter details of Student :
+Enter roll no. :
+1001   
+Enter name :
+Shamima         
+Enter Age :        
+19                 
+Enter C marks :    
+98                 
+Enter Maths marks :
+94                 
+Enter Physics marks :
+93                                                                                                                                                 
+Enter details of Student 2 :
+Enter roll no. :   
+1002               
+Enter name :       
+Shabnoor           
+Enter Age :        
+18                 
+Enter C marks :    
+95                 
+Enter Maths marks :
+96                 
+Enter Physics marks : 
+80                 
+Enter details of Student 3 :                                                                                                  
+Enter roll no. :   
+1003               
+Enter name :       
+Silpa              
+Enter Age :       
+22                 
+Enter C marks :    
+91                 
+Enter Maths marks :
+84                 
+Enter Physics marks :
+72     
+Enter details of Student 4 :
+Enter roll no. :            
+1004                        
+Enter name :                
+Shetty                      
+Enter Age :                 
+21                          
+Enter C marks :             
+68                 
+Enter Maths marks :
+72                 
+Enter Physics marks :
+76                   
+Enter details of Student 5 :
+Enter roll no. :            
+1005                        
+Enter name :       
+Sheik              
+Enter Age :        
+20                 
+Enter C marks :    
+74                 
+Enter Maths marks :
+89                 
+Enter Physics marks :
+91   
+Student 1 Details :              
+Roll No - 1001     
+Name - Shamima     
+Age - 19           
+Marks in C - 98.000000
+Marks in Maths - 94.000000 
+Marks in Physics - 93.000000
+Average Marks: 95.000000    
+
+Student 2 Details :
+Roll No - 1002     
+Name - Shabnoor    
+Age - 18           
+Marks in C - 95.000000
+Marks in Maths - 96.000000
+Marks in Physics - 80.000000
+Average Marks: 90.333336                                                                                                                         
+Student 3 Details :
+Roll No - 1003     
+Name - Silpa       
+Age - 22           
+Marks in C - 91.000000
+Marks in Maths - 84.000000
+Marks in Physics - 72.000000
+Average Marks: 82.333336                                                                                                                         
+Student 4 Details :
+Roll No - 1004     
+Name - Shetty      
+Age - 21           
+Marks in C - 68.000000
+Marks in Maths - 72.000000
+Marks in Physics - 76.000000
+Average Marks: 72.000000                                                                                                                         
+Student 5 Details :
+Roll No - 1005     
+Name - Sheik       
+Age - 20           
+Marks in C - 74.000000
+Marks in Maths - 89.000000                                                                                          
+Marks in Physics - 91.000000
+Average Marks: 84.666664    
