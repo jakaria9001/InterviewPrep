@@ -57,7 +57,7 @@ public:
     }
     ListNode* reverse(ListNode* head){
         if(!head || !head->next) return head;
-        
+        // one way of reversal: 
         ListNode *cur = head,*tHead, *temp;
         
         tHead = reverse(head->next);
@@ -66,7 +66,11 @@ public:
 
         temp->next = cur;
         cur->next = NULL;
-        
+        // alternate way: 
+        //         ListNode *tHead = reverse(head->next);
+        //         head->next->next = head;
+        //         head->next = NULL;
+        //         return tHead;
         return tHead;
     }
     bool check(ListNode*& temp, ListNode* p){
