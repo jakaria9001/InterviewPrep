@@ -14,8 +14,9 @@ class Spaceship {
 	string name;
 	int noOfMissiles;
 	int shieldStrength;
-	static int difficulty;
 public:
+	static int difficulty;
+
 	Spaceship(string name) {
 		this->name = name;
 	}
@@ -27,6 +28,7 @@ public:
 		return name;
 	}
 };
+int Spaceship::difficulty = 101;
 
 int32_t main()
 {
@@ -37,12 +39,13 @@ int32_t main()
 
 	Spaceship mySpaceship("IronManShip");
 
-	cout << mySpaceship.getName();
+	cout << mySpaceship.getName() << endl;
 
 	Spaceship carcruisher("SpiderShip");
 
-	cout << carcruisher.getName();
-
+	cout << carcruisher.getName() << endl;
+	Spaceship::difficulty -= 1;
+	cout << Spaceship::difficulty << endl;
 	return 0;
 }
 
