@@ -18,3 +18,24 @@ vector<int> Solution::sortColors(vector<int> &A) {
 
     return A;
 }
+
+// correction:
+vector<int> Solution::sortColors(vector<int> &A) {
+    int n = A.size();
+
+    int st = 0, mid = 0, en = n-1;
+
+    while(mid<=en){
+        if(A[mid]==0){
+            swap(A[st++],A[mid++]);
+            // st++;mid++;
+        }else if(A[mid]==1){
+            mid++;
+            // en--;
+        }else 
+            swap(A[en--],A[mid]);
+    }
+
+    return A;
+}
+
