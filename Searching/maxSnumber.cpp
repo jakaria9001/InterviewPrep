@@ -52,3 +52,27 @@ int Solution::solve(vector<int> &A, int B) {
  
     return bsearch(prefixsum, n, B);
 }
+
+// other approach:
+int ans = n;
+    int sum = 0;
+    int start = 0;
+ 
+    // Loop till N
+    for (int end = 0; end < n; end++)
+    {
+        sum += A[end];
+ 
+        while (sum > B) {
+            sum -= A[start];
+            start++;
+            ans = min(ans, end - start + 1);
+            if (sum == 0)
+                break;
+        }
+        if (sum == 0) {
+            ans = -1;
+            break;
+        }
+    }
+    return ans;
